@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CASPY SHOP</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/logo.jpg" alt="Logo" />
+                <h1>CASPY SHOP</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="news.html">Новости</a>
+                <a href="contact.html">Контакты</a>
+                <a href="about.html">О Нас</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Магазин</h2>
+            <div class="tabs">
+                <ul class="tab-list">
+                    <li class="tab-item active" data-tab="battle">Caspy Pass</li>
+                    <li class="tab-item" data-tab="main">Главная</li>
+                    <li class="tab-item vip" data-tab="vip">VIP</li>
+                    <li class="tab-item" data-tab="skins">Скины</li>
+                    <li class="tab-item" data-tab="cars">Машины</li>
+                    <li class="tab-item" data-tab="security">Охрана</li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="battle"></div>
+                    <div class="tab-panel" id="main"></div>
+                    <div class="tab-panel vip" id="vip">
+                        <ul class="cards-container-vip">
+                            <figure class="cards-premium-vip-img">
+                                <img src="assets/VIP Premium.jpg" alt="Premium VIP">
+                            </figure>
+                            <li class="cards-content-premium-vip">
+                                <h3>Premium VIP</h3>
+                                <p>Открой новые возможности.</p>
+                                <ul>
+                                    <li>150 Caspy Coins каждый день.</li>
+                                    <li>Можно улучшить уровень VIP.</li>
+                                </ul>
+                                <div class="buy-button-01">
+                                    <button type="button" class="buy-button-pvip">
+                                        <span class="price">37.99$</span>
+                                        <span class="sub-text-pvip">Купить</span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="skins"></div>
+                    <div class="tab-panel" id="cars"></div>
+                    <div class="tab-panel" id="security"></div>
+                </div>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popup-message"></p>
+                    <button onclick="closePopup()">Закрыть</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>CASPY © 2025. Все права защищены.</p>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
